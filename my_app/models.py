@@ -27,7 +27,7 @@ class Product(models.Model):
     slug = models.SlugField()
     description = models.TextField()
     sub_description = models.TextField()
-    images = models.ImageField(upload_to='my_app', null=True, blank=True)
+    image = models.ImageField(upload_to='my_app', null=True, blank=True)
 
     def get_absolute_url(self):
         return reverse("my_app:product-detail", kwargs={
@@ -37,7 +37,7 @@ class Product(models.Model):
     @property
     def imageURL(self):
         try:
-            url = self.images.url
+            url = self.image.url
         except:
             url = ''
         return url
