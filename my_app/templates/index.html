@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}Toys Shop an Ecommerce Category | Home {% endblock title %}
-{% block short %}{% endblock short %}
+{% block title %}Chaisart creations | Home {% endblock title %}
+{% block short %}Chaisart creations{% endblock short %}
 
 
 {% block css %}
@@ -117,7 +117,7 @@
                      <h4 class="pt-3">{{product.title}}</h4>
                   </div>
                   <div class="outs_more-buttn">
-                     <a href="/shop">Shop Now</a>
+                     <a href="{{product.get_absolute_url}}">View</a>
                   </div>
                </div>
             </li>
