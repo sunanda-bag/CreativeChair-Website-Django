@@ -88,17 +88,7 @@ a.filled-button:hover {
 	margin-bottom: 15px;
 }
 
-.products-heading {
-	background-image: url(../images/products-heading.jpg);
-}
 
-.about-heading {
-	background-image: url(../images/about-heading.jpg);
-}
-
-.contact-heading {
-	background-image: url(../images/contact-heading.jpg);
-}
 
 .page-heading {
 	padding: 210px 0px 130px 0px;
@@ -545,53 +535,6 @@ footer .inner-content p a {
 }
 
 
-
-
-/* Services */
-
-.services {
-	background-image: url(../images/services-bg.jpg);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	padding: 100px 0px;
-}
-
-.services .service-item {
-	text-align: center;
-}
-
-.services .service-item .icon {
-	background-color: #f7f7f7;
-	padding: 40px;
-}
-
-.services .service-item .icon i {
-	width: 100px;
-	height: 100px;
-	display: inline-block;
-	text-align: center;
-	line-height: 100px;
-	background-color: #f33f3f;
-	color: #fff;
-	font-size: 32px;
-}
-
-.services .service-item .down-content {
-	background-color: #fff;
-	padding: 40px 30px;
-}
-
-.services .service-item .down-content h4 {
-	font-size: 17px;
-	color: #1a6692;
-	margin-bottom: 20px;
-}
-
-.services .service-item .down-content p {
-	margin-bottom: 25px;
-}
 
 
 
