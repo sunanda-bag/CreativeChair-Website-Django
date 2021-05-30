@@ -16,19 +16,19 @@ def about(request):
     context = {}
     return render(request, 'about.html', context)
 
-def service(request):
-    context = {}
-    return render(request, 'service.html', context)
+# def service(request):
+#     context = {}
+#     return render(request, 'service.html', context)
 
 
 class ProductsView(ListView):
     model = Product
-    template_name = 'shop.html'
+    template_name = 'products.html'
 
 
 class ProductDetailView(DetailView):
     model = Product
-    template_name = 'product-detail.html'
+    template_name = 'product_detail.html'
 
 
 def contact(request):
