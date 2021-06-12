@@ -383,7 +383,7 @@ button {
 	float: left;
 	background-image: url(../images/about-bg.png);
 	height: auto;
-	background-size: 100%;
+	background-size: 80vw 90vh;
 	background-repeat: no-repeat;
 }
 .about_long_text{
