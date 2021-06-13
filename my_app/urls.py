@@ -9,5 +9,7 @@ urlpatterns = [
     path('contact/', views.contact, name='contact'),
     # path('service/', views.service, name='service'),
     path('products/', views.ProductsView.as_view(), name='products'),
-    path('product-detail/<slug>/', views.ProductDetailView.as_view(), name= 'product-detail'),
+    path('products/<str:id>/', views.product_detail, name= 'product-detail'),
+    # path('products/<str:id>/', views.product_detail, name= 'product-detail'),
+
 ]

@@ -1,7 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView, DetailView, View
 from .models import *
 from django.core.mail import send_mail
+
 
 
 
@@ -26,9 +27,19 @@ class ProductsView(ListView):
     template_name = 'products.html'
 
 
-class ProductDetailView(DetailView):
-    model = Product
-    template_name = 'product_detail.html'
+# class ProductDetailView(DetailView):
+#     model = Product
+#     template_name = 'product_detail.html'
+
+#     def get_object(self):
+#         return get_object_or_404(Product, pk=id)
+
+def product_detail(request,id):
+    product = Product.objects.get(id=id)
+    print(product)
+    context = {'product':product}
+    return render(request,'product_detail.html',context)
+
 
 
 def contact(request):
