@@ -287,7 +287,7 @@
 
                     {% for item in product.productimage_set.all %}
                     <div class="img-item">
-                        <a href="#" data-id="2">
+                        <a href="#" data-id="{{forloop.counter|add:1}}">
                             <img class="img-fluid " src="{{item.imageURL}}"
                                 alt="image">
                         </a>
@@ -360,10 +360,10 @@
                 <div class="social_icon">
                     <ul>
                         <p>Contact Us: </p>
-                      <li><a href="https://www.facebook.com/Creations-chaisart-104593098463446" target="_blank"><img
-                            src="{% static 'images/fb-icon.png' %}"></a></li>
-                      <li><a href="https://www.instagram.com/creations_chaisart_/" target="_blank"><img
-                            src="{% static 'images/instagram-icon.png' %}"></a></li>
+                        <li><a href="https://www.facebook.com/Creations-chaisart-104593098463446"
+                            target="_blank"><img src="{% static 'images/fb-icon.png' %}"></a></li>
+                        <li><a href="https://www.instagram.com/creations_chaisart_/" target="_blank"><img
+                              src="{% static 'images/instagram-icon.png' %}"> creationschaisart</a></li>
     
                     </ul>
                   </div>

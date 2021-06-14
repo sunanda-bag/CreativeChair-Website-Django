@@ -215,7 +215,7 @@ button {
 .header_section{
 	width: 100%;
 	float: left;
-	background-image: url(../images/banner-bg.png);
+	background-image: url(../images/olive_yellow_bg.jpg);
 	height: auto;
 	background-size: 100%;
 	background-repeat: no-repeat;
@@ -381,8 +381,8 @@ button {
 .about_bg{
 	width: 100%;
 	float: left;
-	background-image: url(../images/about-bg.png);
-	height: auto;
+	background-image: url(../images/olive_yellow_bg.jpg);
+	height: fit-content;
 	background-size: 80vw 90vh;
 	background-repeat: no-repeat;
 }
@@ -390,8 +390,9 @@ button {
 	width: 100%;
 	float: left;
 	color: #f7f3f3;	
-	font-size: 18px;
-	padding-top: 80px;
+	font-size: 15px;
+	padding-top: 50px;
+    text-align: justify;
 
 }
 .about_bt {
@@ -410,7 +411,8 @@ button {
     width: 100%;
     float: left;
     position: relative;
-    top: -80px;
+    top: 80px;
+    padding-right: 6%;
 }
 
 .our_furniture_section{
@@ -526,7 +528,7 @@ button {
 .contact_section_inner{
 	width: 100%;
 	float: left;
-	background-color: #fee509;
+	background-color: #725917;
 	height: auto;
 }
 .contact_main {
@@ -558,7 +560,7 @@ button {
 	height: 30px;
 	padding: 0px 15px;
 }
-.social_icon li{ float: left; padding-left: 22px;}
+.social_icon li{ float: left; padding-left: 10px;}
 .massage_box{
 	width: 100%;
 	float: left;
@@ -585,7 +587,7 @@ button {
 .footer_section{
 	width: 100%;
 	float: left;
-	background-color: #303330;
+	background-color: #080808;
 	height: auto;
 	margin-top: 90px;
     padding-bottom: 90px;
@@ -652,7 +654,7 @@ font-size: 17px;
 .copyright{
 	width: 100%;
 	float: left;
-	background-color: #fec40c;
+	background-color: #725917;
 	height: auto;
 }
 .copyright_text{
