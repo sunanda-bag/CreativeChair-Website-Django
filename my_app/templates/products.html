@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block content %}
+
+</div>
+<!-- header section end  -->
+
+
+
+
+
+<!-- our furniture section start -->
+<div class="our_furniture_section layout_padding">
+  <div class="container">
+    <h1 class="about_taital">Our <span
+        style="background-color: #725917; color: #fff; padding: 0px 5px;">Products</span></h1>
+    <p class="market_text"></p>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="our_section_2 ">
+
+    <div class="images_section_2 ">
+      <div class="row">
+        {% for product in object_list %}
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="card mb-4 m-1" style="width: 20rem; padding:10px;">
+
+            <div class="image_6 card-img-top"> <a href="{{product.id}}"><img
+                  src="{{product.imageURL}}"></a></div>
+                  <div class="card-body p-2">
+                    <h5 class="card-title mb-1">{{product.title}}</h5>
+                  </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+  </div>
+
+
+
+</div>
+
+
+
+  
+<!-- our furniture section end -->
+
+
+
+
+
+{% endblock content %}
