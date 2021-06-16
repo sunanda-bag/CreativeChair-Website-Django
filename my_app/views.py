@@ -3,6 +3,7 @@ from django.views.generic import ListView, DetailView, View
 from .models import *
 from django.core.mail import send_mail
 
+from django.utils.translation import gettext as _
 
 
 
